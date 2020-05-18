@@ -1,0 +1,31 @@
+{
+  "name": "api-server-example",
+  "version": "1.0.0",
+  "description": "An example in NodeJS",
+  "main": "myServer.js",
+  "scripts": {
+    "test": "node myServer.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "twitter",
+    "blogs"
+  ],
+  "author": "Rafael Berlanga",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap-vue": "^2.8.0",
+    "express": "^4.17.1",
+    "express-sse": "^0.5.0",
+    "glob": "^7.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0",
+    "vue": "^2.6.11"
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  img {
+	  margin:auto;
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+</head>
+<body>
+  <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar-brand href="/">El collecionista</b-navbar-brand>
+  
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  
+    <b-collapse id="nav-collapse" is-nav>
+    <b-navbar-nav>
+      <b-nav-item href="collections.html">Collections</b-nav-item>
+      <b-nav-item href="·">Contact</b-nav-item>
+    </b-navbar-nav>
+  
+    <!-- Right aligned nav items -->
+    <b-navbar-nav class="ml-auto">
+      <b-nav-form>
+      <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+      <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
+      </b-nav-form>
+      
+      <b-nav-item-dropdown right>
+      <!-- Using 'button-content' slot -->
+      <template v-slot:button-content>
+        <em>User</em>
+      </template>
+      <b-dropdown-item href="#">Profile</b-dropdown-item>
+      <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+      </b-nav-item-dropdown>
+    </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
+<div><img src="logo.jpg" class="center"></div>
+
+<div class="card bg-light">
+	<article class="card-body mx-auto" style="max-width: 400px;">
+		<h4 class="card-title mt-3 text-center">Log In</h4>
+		
+		
+		
+		<form>
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+			 </div>
+			<input name="" class="form-control" placeholder="Username" type="text">
+		</div> <!-- form-group// -->
+		<div class="form-group input-group">
+			<div class="input-group-prepend">
+				<span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+			 </div>
+			<input name="" class="form-control" placeholder="Email address" type="email">
+		</div> <!-- form-group// -->
+		
+		                                     
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-block"> Log in  </button>
+		</div> <!-- form-group// -->      
+		                                                             
+	</form>
+	</article>
+	</div> 
+  </div> 
+  <script>     
+		window.app  = new Vue({
+		  el: '#elcollecionista',
+		  show: true
+		  })
+		</script>
+</body>
+</html>

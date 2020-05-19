@@ -103,7 +103,7 @@
       },
       created() {
         var self = this
-        axios.get("http://localhost:8000/collections")
+        axios.get("http://localhost:8080/collections")
           .then(response => self.items = response.data.result)
           .catch(function (error) {
             console.log(error);

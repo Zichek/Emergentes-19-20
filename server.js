@@ -53,5 +53,5 @@ app.post('/coin', control.createCoin)
 
 //etc ...
 
-const PORT = 8000
-app.listen(PORT,'0.0.0.0', _ => console.log(`Servidor web escuchando en puerto ${PORT}`))
+const PORT = 8080
+app.listen(PORT,'0.0.0.0')

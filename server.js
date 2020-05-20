@@ -53,5 +53,5 @@ app.post('/coin', control.createCoin)
 
 //etc ...
 
-const PORT = 8080
+const PORT = 8000
 app.listen(PORT)

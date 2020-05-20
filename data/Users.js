@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const saltRounds = 10;
 const MONGODB = 'mongodb+srv://EI1053:Emergentes1053@ei1053-hugdf.mongodb.net/test?retryWrites=true&w=majority'
 
 var User = new mongoose.Schema({
@@ -28,9 +26,6 @@ var User = new mongoose.Schema({
 	},
 });
 
-User.pre('save', function (next) {
-	this.password = bcrypt.hashSync(this.password, saltRounds);
-	next();
-});
+
 
 module.exports = mongoose.model("User", User)

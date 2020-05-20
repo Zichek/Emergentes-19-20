@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 const MONGODB = 'mongodb+srv://EI1053:Emergentes1053@ei1053-hugdf.mongodb.net/test?retryWrites=true&w=majority'
 
@@ -54,5 +53,5 @@ app.post('/coin', control.createCoin)
 
 //etc ...
 
-const PORT = 8000
-app.listen(PORT)
+const PORT = 8080
+app.listen(PORT,'0.0.0.0')
